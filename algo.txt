@@ -1,0 +1,30 @@
+ALGORITHME projet_algo
+var
+
+debut
+repeter
+	lire(phrase)
+jusqu'à (phrase != '' et phrase[-1]==.)
+i:=0
+compteur:=0
+esp:=0
+
+tantque (phrase[i]!='' et phrase[i]!='.') faire:
+	i:=i+1
+	
+	si(phrase[i]==' ') alors:
+		esp:=esp+1
+	fin si
+
+	si(Majus(phrase[i])=='A' ou Majus(phrase[i])=='E' ou  Majus(phrase[i])=='O' ou 		Majus(phrase[i])=='I' ou Majus(phrase[i])=='U' ou Majus(phrase[i])=='Y' alors:
+		compteur:=compteur+1
+	fin si
+
+fin tantque
+ecrire(" la longueur de la phrase : ",i)
+ecrire(" le nombre de voyelle est : ",compteur)
+ecrire(" le nombre de mots dans la phrase est : ",esp)
+		
+
+
+
