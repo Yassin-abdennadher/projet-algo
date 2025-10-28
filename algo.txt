@@ -1,6 +1,7 @@
 ALGORITHME projet_algo
 var
-
+	phrase:chaine de caractere
+	i,compteur,esp : entier
 debut
 repeter
 	lire(phrase)
